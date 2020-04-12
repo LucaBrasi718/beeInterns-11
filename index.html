@@ -10,52 +10,218 @@
 </head>
 <body>
     <header>
-        <div class="inner">
-            <div class="header">
-                <div class="header__logo">
-                    <a href="#">
-                        <img src="./images/logo.svg" alt="Логотип">
-                    </a>
-                </div>
-                <div class="header__center">
-                    <form class="header__form">
-                        <div class="form__input-block">
-                            <input type="text" class="action input" placeholder="Search for Products">
-                        </div>
-                        <div class="form__button-block">
-                            <button type="button" class="action btn sumbit-btn">
-                                Search
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                <div class="header__actions">
-                    <a href="#" class="action btn common-btn action__login">Log In</a>
-                    <a href="#" class="action btn common-btn action__signup">Sing Up</a>
-                    <a href="#" class="action__like">
-                        <img src="./images/like.svg" alt="Like">
-                    </a>
-                    <a href="#" class="action__basket">
-                        <img src="./images/cart.svg" alt="cart">
-                    </a>
-                </div>
+        <div class="header">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./images/logo.svg" alt="Логотип">
+                </a>
+            </div>
+            <div class="header__center">
+                <form class="header__form">
+                    <div class="form__input-block">
+                        <input type="text" class="action input" placeholder="Search for Products">
+                    </div>
+                    <div class="form__button-block">
+                        <button type="button" class="action btn sumbit-btn">
+                            Search
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="header__actions">
+                <a href="#" class="action btn common-btn action__login">Log In</a>
+                <a href="#" class="action btn common-btn action__signup">Sing Up</a>
+                <a href="#" class="action__like">
+                    <img src="./images/like.svg" alt="Like">
+                </a>
+                <a href="#" class="action__basket">
+                    <img src="./images/cart.svg" alt="cart">
+                </a>
             </div>
         </div>
         <div class="subheader">
-            <div class="inner">
-                <div class="subheader__menu">
-                    <a href="#" class="menu__item">Home Decor</a>
-                    <a href="#" class="menu__item">Furniture</a>
-                    <a href="#" class="menu__item">Lighting</a>
-                    <a href="#" class="menu__item">Home Accent</a>
-                    <a href="#" class="menu__item">Rugs</a>
-                    <a href="#" class="menu__item">Outdoors</a>
-                    <a href="#" class="menu__item">Holidays</a>
-                    <a href="#" class="menu__item">Gifts</a>
-                    <a href="#" class="menu__item">Events</a>
-                </div>
+            <div class="subheader__menu">
+                <a href="#" class="menu__item">Home Decor</a>
+                <a href="#" class="menu__item">Furniture</a>
+                <a href="#" class="menu__item">Lighting</a>
+                <a href="#" class="menu__item">Home Accent</a>
+                <a href="#" class="menu__item">Rugs</a>
+                <a href="#" class="menu__item">Outdoors</a>
+                <a href="#" class="menu__item">Holidays</a>
+                <a href="#" class="menu__item">Gifts</a>
+                <a href="#" class="menu__item">Events</a>
             </div>
         </div>
     </header>
+    <main>
+        <div class="inner">
+            <h1>
+                Seller Application
+            </h1>
+            <div class="application">
+                <div class="application__menu">
+                    <ul>
+                        <li><a href="#">Application Critaria</a></li>
+                        <li><a href="#">Company Profile</a></li>
+                        <li><a href="#">Web & Social Media</a></li>
+                        <li class="active"><a href="#">Contact Info</a></li>
+                        <li><a href="#">Confirm Account</a></li>
+                    </ul>
+                </div>
+                <div class="application__area">
+                    <div class="area__type area__type-1"></div>
+                    <div class="area__type area__type-2"></div>
+                    <div class="area__type area__type-3"></div>
+                    <div class="area__type area__type-4 active">
+                        <form method="POST">
+                            <div class="area__section">
+                                <div class="section__title">
+                                    Name
+                                </div>
+                                <div class="section__row">
+                                    <div class="section__input-block">
+                                        <input type="text" class="action" placeholder="Mr.">
+                                    </div>
+                                    <div class="section__input-block">
+                                        <input type="text" class="action" placeholder="First Name">
+                                    </div>
+                                    <div class="section__input-block">
+                                        <input type="text" class="action" placeholder="Middle Name">
+                                    </div>
+                                    <div class="section__input-block">
+                                        <input type="text" class="action" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="area__section">
+                                <div class="section__title">
+                                    Title
+                                </div>
+                                <div class="section__row">
+                                    <div class="section__input-block">
+                                        <input type="text" class="action" placeholder="eg. CEO, Owner, Manager, Designer, Merchandiser">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="area__block">
+                                <div class="block__title">
+                                    Business mailing address
+                                </div>
+                                <div class="section__row">
+                                    <div class="section__input-block">
+                                        <div class="section__title">
+                                            Street Address
+                                        </div>
+                                        <input type="text" class="action">
+                                    </div>
+                                    <div class="section__input-block">
+                                        <div class="section__title">
+                                            Apt / Suite / Other
+                                        </div>
+                                        <input type="text" class="action">
+                                    </div>
+                                    <div class="section__input-block">
+                                        <div class="section__title">
+                                            City
+                                        </div>
+                                        <input type="text" class="action">
+                                    </div>
+                                </div>
+                                <div class="section__row">
+                                    <div class="section__input-block">
+                                        <div class="section__title">
+                                            Zip / Postal Code
+                                        </div>
+                                        <input type="text" class="action">
+                                    </div>
+                                    <div class="section__input-block">
+                                        <div class="section__title">
+                                            Country
+                                        </div>
+                                        <input type="text" class="action" placeholder="Select Country">
+                                    </div>
+                                    <div class="section__input-block">
+                                        <div class="section__title">
+                                            Phone Number
+                                        </div>
+                                        <input type="text" class="action">
+                                        <div class="section__description">
+                                            To Validate your account please enter valid mobile Number to receive confirmation code
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="area__block">
+                                <div class="section__row">
+                                    <button type="button" class="btn common-btn action">Go Back</button>
+                                    <div class="guidelines">By Submitting this application, you agree to the buyer guidelines</div>
+                                    <button type="submit" class="btn sumbit-btn action">Submit Application</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="area__type-5"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="inner">
+                <div class="footer__list">
+                    <div class="list__title">
+                        How We Help
+                    </div>
+                    <ul>
+                        <li><a href="">Retailers</a></li>
+                        <li><a href="">Interiors Designers</a></li>
+                        <li><a href="">Product Designers</a></li>
+                        <li><a href="">Wholesalers / Importers</a></li>
+                        <li><a href="">Artisans</a></li>
+                    </ul>
+                </div>
+                <div class="footer__list">
+                    <div class="list__title">
+                        Get to Know
+                    </div>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Policies</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer__list">
+                    <div class="list__title">
+                        Join the Community
+                    </div>
+                    <ul>
+                        <li><a href="">Upcoming Events</a></li>
+                        <li><a href="">Become a Buyer</a></li>
+                        <li><a href="">Become a Seller</a></li>
+                    </ul>
+                </div>
+                <div class="footer__list">
+                    <div class="list__title">
+                        Follow Us
+                    </div>
+                    <ul>
+                        <li><a class="social facebook" href="">Facebook</a></li>
+                        <li><a class="social pinterest" href="">Pinterest</a></li>
+                        <li><a class="social twitter" href="">Twitter</a></li>
+                        <li><a class="social instagram" href="">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="subfooter">
+            <div class="inner">
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

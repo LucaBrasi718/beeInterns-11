@@ -6,8 +6,8 @@
     font-family: "Roboto", -apple-system, system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 /* ================ INPUT STYLE ======================= */
@@ -53,6 +53,16 @@ input:focus:-moz-placeholder {
 input:focus:-ms-input-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+/* === */
+
+h1 {
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    font-weight: normal;
+    color: #000;
 }
 
 a {
@@ -108,7 +118,7 @@ body {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding: 33px 0 27px;
+    padding: 33px 80px 27px;
 }
 
 .header__form {
@@ -120,6 +130,7 @@ body {
 
 .header__form input {
     border-radius: 4px 0 0 4px;
+    border-color: #e0e0e0;
     width: 325px;
 }
 
@@ -156,7 +167,7 @@ body {
 /* ==== HEADER MENU ==== */
 .subheader {
     background-color: #F4F4F4;
-    padding: 13px 0 14px;
+    padding: 13px 80px 14px;
 }
 
 .subheader__menu {
@@ -173,4 +184,203 @@ body {
 
 .menu__item + .menu__item {
     margin-left: 20px;
+}
+
+/* ========= MAIN STYLES ========= */
+main {
+    padding: 40px 0;
+}
+
+.application {
+    padding: 15px 0 50px;
+}
+
+.application__menu {
+    padding: 20px 0;
+}
+
+.application__menu ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.application__menu a {
+    transition: color 0.4s;
+}
+
+.application__menu li.active a {
+    color: #007AFF;
+}
+
+.application__menu a:hover {
+    color: #007AFF;
+}
+
+.application__area {
+    padding: 0 20px 30px;
+    border: 1px solid #C6C6C5;
+    border-radius: 4px;
+}
+
+.application__area .area__type {
+    display: none;
+}
+
+.application__area .area__type.active {
+    display: block;
+}
+
+.area__block {
+    margin-top: 50px;
+}
+
+.block__title {
+    position: relative;
+    text-indent: 1px;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    color: #007AFF;
+    font-weight: 500;
+    margin-bottom: 17px;
+}
+
+.block__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: #C6C6C5;
+    opacity: 0.5;
+}
+
+.area__section {
+    margin-top: 40px;
+}
+
+.section__title {
+    margin-bottom: 9px;
+    text-indent: 1px;
+    font-weight: 500;
+    color: #000;
+}
+
+.section__row {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section__row + .section__row {
+    margin-top: 30px;
+}
+
+.section__row .section__description {
+    font-size: 13px; /* для того чтобы вместилось в 2 строки на десктопе*/
+    line-height: 16px;
+    margin-top: 10px;
+    color: #878786;
+}
+
+.section__row .section__input-block {
+    width: 100%;
+}
+
+.section__row .section__input-block input {
+    width: 100%;
+}
+
+.section__row .section__input-block + .section__input-block {
+    padding-left: 20px;
+}
+
+.section__input-block .action {
+    font-weight: normal;
+    border-color: #C6C6C5;
+}
+
+.section__row .guidelines {
+    line-height: 40px;
+}
+
+/* ===== FOOTER STYLES ===== */
+.footer {
+    padding: 50px 0 20px;
+}
+
+.footer .inner {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__list .list__title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+}
+
+.footer__list ul {
+    margin-top: 10px;
+}
+
+.footer__list a {
+    position: relative;
+    color: #1C1C1B;
+    line-height: 30px;
+}
+
+.footer__list .social {
+    padding-left: 30px;
+}
+
+.footer__list .social::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+    width: 22px;
+    height: 21px;
+}
+
+.footer__list .facebook::before{
+    background: url("../images/fb.svg");
+}
+
+.footer__list .twitter::before{
+    background: url("../images/twitter.svg");
+}
+
+.footer__list .instagram::before{
+    background: url("../images/insta.svg");
+}
+
+.footer__list .pinterest::before{
+    background: url("../images/pinterest.svg");
+}
+
+.subfooter {
+    padding: 20px 0;
+    border-top: 1px solid #C6C6C5;
+}
+
+.subfooter ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.subfooter li {
+    padding: 0 10px;
+}
+
+.subfooter a {
+    line-height: 25px;
 }
